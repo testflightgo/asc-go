@@ -88,6 +88,7 @@ type betaGroupCreateRequest struct {
 type BetaGroupCreateRequestAttributes struct {
 	FeedbackEnabled        *bool  `json:"feedbackEnabled,omitempty"`
 	Name                   string `json:"name"`
+	IsInternalGroup        *bool  `json:"isInternalGroup,omitempty"`
 	PublicLinkEnabled      *bool  `json:"publicLinkEnabled,omitempty"`
 	PublicLinkLimit        *int   `json:"publicLinkLimit,omitempty"`
 	PublicLinkLimitEnabled *bool  `json:"publicLinkLimitEnabled,omitempty"`
