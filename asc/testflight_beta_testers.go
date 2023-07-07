@@ -52,10 +52,11 @@ type BetaTester struct {
 //
 // https://developer.apple.com/documentation/appstoreconnectapi/betatester/attributes
 type BetaTesterAttributes struct {
-	Email      *Email          `json:"email,omitempty"`
-	FirstName  *string         `json:"firstName,omitempty"`
-	InviteType *BetaInviteType `json:"inviteType,omitempty"`
-	LastName   *string         `json:"lastName,omitempty"`
+	Email           *Email          `json:"email,omitempty"`
+	FirstName       *string         `json:"firstName,omitempty"`
+	InviteType      *BetaInviteType `json:"inviteType,omitempty"`
+	LastName        *string         `json:"lastName,omitempty"`
+	BetaTesterState *string         `json:"betaTesterState,omitempty"`
 }
 
 // BetaTesterRelationships defines model for BetaTester.Relationships
