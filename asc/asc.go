@@ -411,6 +411,7 @@ func checkResponse(r *Response) error {
 	}
 
 	data, err := io.ReadAll(r.Body)
+	fmt.Println("请求返回的源数据：", string(data))
 	erro := new(ErrorResponse)
 
 	if err == nil && data != nil {
